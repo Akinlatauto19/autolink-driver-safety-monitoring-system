@@ -1,0 +1,29 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "sensor_manager.c"
+        "driver_monitor.c"
+        "state_machine.c"
+        "event_recorder.c"
+        "led_manager.c"
+        "buzzer_manager.c"
+        "display_manager.c"
+        "wifi_manager.c"
+        "wifi_driver.c"
+        "i2c_manager.c"
+        "sh1107.c"
+        "supabase_client.c"
+
+    INCLUDE_DIRS
+        "."
+
+    REQUIRES
+    esp_driver_gpio
+    esp_driver_i2c
+    esp_timer
+    esp_wifi
+    esp_netif
+    esp_event
+    nvs_flash
+    esp_http_client
+)
